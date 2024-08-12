@@ -1,0 +1,75 @@
+{
+  "name": "indieweb.chrismcleod.dev",
+  "version": "1.0.0",
+  "description": "Indiekit server for https://chrismcleod.dev",
+  "main": "index.js",
+  "scripts": {
+    "start": "indiekit serve"
+  },
+  "keywords": [
+    "indiekit",
+    "indieweb"
+  ],
+  "author": "",
+  "license": "ISC",
+  "engines": {
+    "node": ">=20"
+  },
+  "type": "module",
+  "indiekit": {
+    "plugins": [
+      "@indiekit/preset-eleventy",
+      "@indiekit/store-github"
+    ],
+    "publication": {
+      "me": "https://chrismcleod.dev",
+      "postTypes": {
+        "note": {
+          "name": "Note",
+          "postStatus": "published",
+          "visibility": "public",
+          "post": {
+            "url": "notes/{yyyy}{MM}{DD}{HH}{mm}/"
+          },
+          "fields": {
+            
+          }
+        },
+        "like": {
+          "name": "Like",
+          "postStatus": "published",
+          "visibility": "public",
+          "post": {
+            "url": "likes/{yyyy}{MM}{DD}{HH}{mm}/"
+          }
+        },
+        "article": {
+          "name": "Blog Post",
+          "postStatus": "published",
+          "visibility": "public",
+          "post":{
+            "url": "blog/{slug}/"
+          }
+        },
+        "bookmark": {
+          "name": "Bookmark",
+          "postStatus": "published",
+          "visibility": "public",
+          "post": {
+            "url": "bookmarks/{slug}/"
+          }
+        }
+      }
+    },
+    "@indiekit/store-github": {
+      "user": "mcleodchris",
+      "repo": "next.chrismcleod.dev",
+      "branch": "develop"
+    }
+  },
+  "dependencies": {
+    "@indiekit/indiekit": "^1.0.0-beta.17",
+    "@indiekit/preset-eleventy": "^1.0.0-beta.10",
+    "@indiekit/store-github": "^1.0.0-beta.15"
+  }
+}

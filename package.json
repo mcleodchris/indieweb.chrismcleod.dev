@@ -29,10 +29,13 @@
           "postStatus": "published",
           "visibility": "public",
           "post": {
+            "path": "src/notes/{yyyy}-{MM}-{dd}-{slug}.md",
             "url": "notes/{yyyy}{MM}{DD}{HH}{mm}/"
           },
           "fields": {
-            
+            "category": {
+              "name": "Tags"
+            }
           }
         },
         "like": {
@@ -40,6 +43,7 @@
           "postStatus": "published",
           "visibility": "public",
           "post": {
+            "path": "src/likes/{yyyy}-{MM}-{dd}-{slug}.md",
             "url": "likes/{yyyy}{MM}{DD}{HH}{mm}/"
           }
         },
@@ -47,8 +51,14 @@
           "name": "Blog Post",
           "postStatus": "published",
           "visibility": "public",
-          "post":{
+          "post": {
+            "path": "src/posts/{yyyy}-{MM}-{dd}-{slug}.md",
             "url": "blog/{slug}/"
+          },
+          "fields": {
+            "category": {
+              "name": "Tags"
+            }
           }
         },
         "bookmark": {
@@ -56,7 +66,18 @@
           "postStatus": "published",
           "visibility": "public",
           "post": {
+            "path": "src/bookmarks/{yyyy}-{MM}-{dd}-{slug}.md",
             "url": "bookmarks/{slug}/"
+          },
+          "fields": {
+            "category": {
+              "name": "Tags"
+            }
+          }
+        },
+        "fields": {
+          "category": {
+            "name": "Tags"
           }
         }
       }

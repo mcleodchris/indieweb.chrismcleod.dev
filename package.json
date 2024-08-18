@@ -32,7 +32,14 @@
             "url": "notes/{yyyy}{MM}{DD}{HH}{mm}/"
           },
           "fields": {
-            
+            "image": {
+              "label": "Image",
+              "type": "text"
+            },
+            "imageAlt": {
+              "label": "Image alt text",
+              "type": "text"
+            }
           }
         },
         "like": {

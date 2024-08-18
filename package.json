@@ -21,6 +21,7 @@
     "@indiekit/preset-eleventy": "^1.0.0-beta.10",
     "@indiekit/store-github": "^1.0.0-beta.15",
     "camelcase-keys": "^9.0.0",
+    "dotenv": "^16.4.5",
     "plur": "^5.1.0",
     "yaml": "^2.4.0"
   }

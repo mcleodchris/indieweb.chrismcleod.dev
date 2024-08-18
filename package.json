@@ -34,12 +34,10 @@
           },
           "fields": {
             "image": {
-              "label": "Image",
-              "type": "text"
+              
             },
-            "imageAlt": {
-              "label": "Image alt text",
-              "type": "text"
+            "image-alt": {
+              
             }
           }
         },

@@ -1,0 +1,42 @@
+{
+    "name": "@mcleodchris/preset-indiekit",
+    "version": "0.0.1",
+    "description": "Eleventy publication preset for Indiekit",
+    "keywords": [
+      "indiekit",
+      "indiekit-plugin",
+      "indieweb",
+      "micropub",
+      "eleventy",
+      "11ty"
+    ],
+    "homepage": "https://getindiekit.com",
+    "author": {
+      "name": "Chris McLeod",
+      "url": "https://chrismcleod.dev"
+    },
+    "license": "MIT",
+    "engines": {
+      "node": ">=20"
+    },
+    "type": "module",
+    "main": "index.js",
+    "files": [
+      "assets",
+      "lib",
+      "index.js"
+    ],
+    "repository": {
+      "type": "git",
+      "url": "https://github.com/mcleodchris/indieweb.chrismcleod.dev.git",
+      "directory": "preset"
+    },
+    "dependencies": {
+      "camelcase-keys": "^9.0.0",
+      "plur": "^5.1.0",
+      "yaml": "^2.4.0"
+    },
+    "publishConfig": {
+      "access": "public"
+    }
+  }

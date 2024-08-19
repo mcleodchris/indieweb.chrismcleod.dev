@@ -1,5 +1,4 @@
 import process from "node:process";
-import CustomPreset from "./preset/index.js";
 import * as dotenv from "dotenv";
 
 dotenv.config();
@@ -16,7 +15,7 @@ const config = {
    */
   plugins: [
     "@indiekit/store-github",
-    CustomPreset
+    "@mcleodchris/preset-indiekit"
   ],
 
   /**

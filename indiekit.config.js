@@ -27,6 +27,7 @@ const config = {
    */
   publication: {
     me: process.env.PUBLICATION_URL,
+    enrichPostData: true
   },
 
   /**

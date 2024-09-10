@@ -18,7 +18,7 @@ export default class CustomPreset {
         visibility: "public",
         post: {
           path: "src/notes/{yyyy}-{MM}-{dd}-{slug}.md",
-          url: "notes/{yyyy}{MM}{DD}{HH}{mm}/",
+          url: "notes/{yyyy}{MM}{dd}{HH}{mm}/",
         },
         fields: {
           image: {},

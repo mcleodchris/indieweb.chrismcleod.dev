@@ -6,7 +6,7 @@ dotenv.config();
 const config = {
   application: {
     url: 'https://indieweb.chrismcleod.dev'
-  }
+  },
   /**
    * Plug-ins
    *
